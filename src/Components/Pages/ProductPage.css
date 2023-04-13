@@ -1,0 +1,86 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Roboto:wght@300;400;500;700&display=swap");
+
+* {
+  font-family: "Roboto", sans-serif;
+  text-align: center;
+}
+.mainProductsPage {
+  width: 100%;
+  overflow-x: hidden;
+  font-size: 14px;
+  z-index: 5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.mainCartPage h2{
+  margin-top: 10px;
+
+}
+
+.mainProductsPage h2 {
+  margin-top: 20px;
+}
+
+.productsPageWrapper {
+  background-color: rgb(206, 195, 195);
+  margin: 20px;
+  min-height: 100vh;
+  max-height: auto;
+  padding: 20px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+.ProductPageCard:hover {
+  cursor: pointer;
+  background-color: #2d3331;
+  color: white;
+  border-radius: 10px;
+  transition: all 0.3s ease-in-out;
+}
+.ProductPageCard {
+  background-color: white;
+  padding: 10px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+  display: flex;
+  width: 350px;
+  height: 200px;
+  flex-direction: column;
+}
+.ProductPageCard .title {
+  padding: 5px;
+}
+.ProductPageCard .price {
+  padding: 5px 0px;
+}
+
+.ProductPageCard img {
+  height: 80px;
+  object-fit: contain;
+}
+.ProductPageCard .btn {
+  border: none;
+  background-color: white;
+  padding: 10px;
+  border-radius: 3px;
+  color: #2d3331;
+  font-weight: bold;
+}
+.ProductPageCard .btn:hover {
+  cursor: pointer;
+  background-color: #2d3331;
+  color: white;
+  border: 2px solid white;
+}
+
+.removeToCartBtn {
+  display: flex;
+  gap: 20px;
+}

@@ -1,0 +1,11 @@
+
+.imgs {
+ margin: 0px 10px;
+ /* margin-bottom: -200px; */
+}
+.slick-slide img {
+ 
+  width: 100%;
+  height: 25%;
+  
+}

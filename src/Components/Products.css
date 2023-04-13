@@ -1,0 +1,62 @@
+.products {
+  height: auto;
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+}
+.productRow1 {
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.productRow2 {
+  background-color: white;
+  height: auto;
+  width: 98%;
+  padding: 20px;
+}
+.productRow2slider {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.productRow2 h3 {
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+.cart {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: #fff;
+  height: 100%;
+  width: 300px;
+  margin-bottom: 0;
+  margin-top: 0;
+  overflow: hidden;
+  padding: 20px;
+}
+.elporeBtnHover:hover {
+  color: #1a5478;
+  font-weight: 500;
+}
+.cart img {
+  width: 250px;
+  height: auto;
+  object-fit: contain;
+  margin: 10px 0px;
+}
+
+.cart a {
+  border: none;
+  color: #5f9ab9;
+}
