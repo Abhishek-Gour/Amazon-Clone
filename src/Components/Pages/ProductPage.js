@@ -5,14 +5,12 @@ import { add } from '../../Store/CartSlice';
 import Header from '../Header';
 const ProductPage = () => {
     const dispatch = useDispatch();
-    // const {data:products,status} = useSelector((state) => state.product);
     const [products, setProduct] = useState([]);
     const handleAdd = (products) => {
         dispatch(add(products))
         alert('Your product is added in the cart')
     }
     useEffect(() => {
-        // dispatch(fetchProducts());
         const fetchProducts = async () => {
             const res = await fetch('https://fakestoreapi.com/products');
             const data = await res.json();

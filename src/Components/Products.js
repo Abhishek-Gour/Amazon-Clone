@@ -95,7 +95,7 @@ function Products() {
                             itemClass="carousel-item-padding-40-px"
 
                         >
-                            <a href="#"><img src="./images/asset 41.jpeg" alt="Product image" /></a>
+                            <a href="#"className='product2ImageHover'><img src="./images/asset 41.jpeg" alt="Product image" /></a>
                             <a href="#"><img src="./images/asset 42.jpeg" alt="Product image" /></a>
                             <a href="#"><img src="./images/asset 43.jpeg" alt="Product image" /></a>
                             <a href="#"><img src="./images/asset 44.jpeg" alt="Product image" /></a>

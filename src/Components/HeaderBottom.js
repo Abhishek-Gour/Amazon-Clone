@@ -11,26 +11,28 @@ function HeaderBottom() {
             <MenuSharpIcon />
             <span>All</span>
           </div>
-          </Link>
+        </Link>
         <ul>
           <Link to='/productpage'>
             <li className='cp hover'><a href="#">Today's Deals</a></li>
-            </Link>
+          </Link>
           <Link to='/productpage'>
             <li className='cp hover'><a href="#">Registry</a></li>
-            </Link>
+          </Link>
           <Link to='/productpage'>
             <li className='cp hover'><a href="#">Customer Service</a></li>
-            </Link>
+          </Link>
           <Link to='/productpage'>
             <li className='cp hover'><a href="#">Gift Card</a></li>
-            </Link>
-         
+          </Link>
+
         </ul>
       </div>
-      <div className="rightNav cp hover">
-        <h4>Shop deals in Electronics</h4>
-      </div>
+      <Link to='/electronicspage'>
+        <div className="rightNav cp hover">
+          <h4>Shop deals in Electronics</h4>
+        </div>
+      </Link>
     </div>
   )
 }

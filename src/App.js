@@ -14,6 +14,7 @@ import ProductPage from './Components/Pages/ProductPage';
 import Cart from './Components/Pages/Cart';
 import { Provider } from 'react-redux';
 import store from './Store/Store';
+import ElectronicsPage from './Components/Pages/ElectronicsPage';
 
 function App() {
   useEffect(() => {
@@ -36,14 +37,13 @@ function App() {
       <Provider store={store}>
         <Router>
 
-
           <Routes>
+            <Route path='/electronicspage' element={<ElectronicsPage/>}/>
             <Route path='/productpage' element={<ProductPage />} />
             <Route path='/cart' element={<Cart />} />
             <Route path='/checkout'
               element={
                 <>
-                  <Header />
                   <Checkout />
                 </>
               }

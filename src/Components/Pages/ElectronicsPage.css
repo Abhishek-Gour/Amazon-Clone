@@ -1,0 +1,68 @@
+.MainElectronicsPage {
+  background-color: #cec3c3;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+  flex-direction: column;
+}
+.electronicsCart {
+  width: 300px;
+  height: 300px;
+  max-height: auto;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+  padding: 10px;
+  justify-content: center;
+  border-radius: 5px;
+}
+.electronicsImage {
+  height: 150px;
+  padding: 10px;
+  object-fit: contain;
+}
+.elcectronicWrapper {
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.electronicsPrice {
+    margin-top: 5px;
+    padding: 5px;
+}
+.electronicsBtn {
+  border: none;
+  background-color: white;
+  padding: 10px;
+  margin: 5px 0px;
+  border-radius: 3px;
+  color: #2d3331;
+  font-weight: bold;
+}
+.electronicTtitle {
+  margin-top: 10px;
+}
+.electronicsCart:hover {
+  cursor: pointer;
+  background-color: #2d3331;
+  color: white;
+  border-radius: 10px;
+  height: 310px;
+  width: 310px;
+  z-index: 1;
+  transition: all 0.5s ease;
+}
+.electronicsBtn:hover {
+  cursor: pointer;
+  background-color: #2d3331;
+  color: white;
+  border-radius: 3px;
+  border: 2px solid white;
+}
