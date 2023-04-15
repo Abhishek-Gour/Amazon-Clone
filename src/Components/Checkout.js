@@ -21,9 +21,9 @@ const Checkout = () => {
         </div>
         <div className="checkoutBottom">
           <div className="checkoutBottomLeft">
-              <Link to='/' className='backToHome'>
+              <Link to='/productpage' className='backToHome'>
                 <ArrowBackIosSharpIcon style={{ color: 'black' }} />
-                <span> <h5 style={{ color: 'black' }}>back to home</h5></span>
+                <span> <h5 style={{ color: 'black' }}>back to cart</h5></span>
               </Link>
             
             <div className="userInformation">

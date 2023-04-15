@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import './ElectronicsPage.css'
 import electronicsItem from './ElectronicsItem'
 import Header from '../Header';
-import { useDispatch } from 'react-redux';
+import { useDispatch, useSelector } from 'react-redux';
 import { add } from '../../Store/CartSlice';
 const ElectronicsPage = () => {
   const dispatch = useDispatch();
@@ -11,9 +11,13 @@ const ElectronicsPage = () => {
     dispatch(add(electronicsItem))
     alert('Your product is added in the cart')
   }
+  // const data = useSelector((d) => {
+  //   return d.show.value;
+  // })
   return (
     <div className='MainElectronicsPage'>
       <Header/>
+      <h2>Your Electric Products</h2>
         <div className="elcectronicWrapper">
           {
           electronicsItem.map((electronicsItem,i) => (
