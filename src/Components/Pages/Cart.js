@@ -11,6 +11,9 @@ const Cart = () => {
   const handleRemove = (productId) => {
     dispatch(remove(productId));
   }
+  const data = useSelector((c) => {
+    console.log(c);
+  })
   return (
     <div className='mainCartPage'>
       <Header />
@@ -19,7 +22,7 @@ const Cart = () => {
         {
           products.map(product => (
             <div className="ProductPageCard">
-              <img src={product.image} alt="Product add to cart image" />
+              <img src={product.image} alt="Product add to cart" />
               <h5>{product.title}</h5>
               <h5>{product.price}</h5>
               <div className='removeToCartBtn'>

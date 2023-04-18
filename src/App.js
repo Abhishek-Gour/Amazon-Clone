@@ -41,13 +41,12 @@ function App() {
             <Route path='/electronicspage' element={<ElectronicsPage/>}/>
             <Route path='/productpage' element={<ProductPage />} />
             <Route path='/cart' element={<Cart />} />
-            <Route path='/checkout'
-              element={
-                <>
-                  <Checkout />
-                </>
-              }
-            />
+            <Route path='/checkout' element={
+              <>
+              <Header/>
+              <Checkout/>
+              </>
+            }/>
             <Route path='/login' element={<Login />} />
             <Route path='/' element={
               <>
