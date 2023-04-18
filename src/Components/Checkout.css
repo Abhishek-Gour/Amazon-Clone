@@ -1,3 +1,21 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Roboto:wght@300;400;500;700&display=swap');
 
 
+.checkout {
+    display: flex;
+    padding: 20px;
+    justify-content: space-between;
+    background-color: white;
+    height: max-content;
+}
+
+.checkout-ad {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.checkout-title {
+    margin-right: 10px;
+    padding: 10px;
+    border-bottom: 1px solid lightgray;
+}
