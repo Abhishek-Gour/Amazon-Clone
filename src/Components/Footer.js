@@ -1,12 +1,14 @@
 
 import React from 'react'
 import './Footer.css';
+import BackToTop from './BackToTop';
 function Footer() {
+    const scrollTop = () => {
+        window.scrollTo({top:0,left:0,behavior:'smooth'})
+    }
     return (
         <div className='footer'>
-            <div className="fotterTop footerCp footerHover ">
-                <h5>Back to top</h5>
-            </div>
+           <BackToTop/>
             <div className="footerMid container">
                 <div className="footerList1 ">
                     <ul>

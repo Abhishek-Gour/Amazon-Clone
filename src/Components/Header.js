@@ -36,7 +36,7 @@ function Header() {
                     <option value="Digital Music" >Digital Music</option>
                     <option value="Electronics" >Electronics</option>
                 </select>
-                <input type="search" placeholder='Search In the World' className='
+                <input type="search" placeholder='Search in the World' className='
 searchInput'/>
                 <SearchIcon className='searchIcon cp hover' />
             </div>
@@ -53,7 +53,7 @@ searchInput'/>
                     <span className='lowerLine'>& Orders</span>
                 </div>
             </div>
-            <Link to='/cart'>
+            <Link to='/checkout'>
                 <div className="headerBasket cp hover">
                     <AddShoppingCartSharpIcon />
                     <span>{items.length}</span>

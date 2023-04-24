@@ -7,13 +7,12 @@
 .footerHover:hover {
     border-bottom: 1px solid white;
     /* width: 50px; */
-
 }
 .footer {
   width: 100%;
   margin-top: 80px;
   background-color: #272d41;
-  height: 100vh;
+  height: 100%;
 }
 .fotterTop {
   display: flex;
@@ -48,7 +47,7 @@
 .footerLast {
     display: flex;
     align-items: center;
-    border-top: 1px solid #ffffff28;
+    border-top: 1px solid #e1d2d228;
     justify-content: center;
     height: auto;
     padding: 20px;

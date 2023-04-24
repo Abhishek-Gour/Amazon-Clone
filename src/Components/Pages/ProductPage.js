@@ -8,7 +8,7 @@ const ProductPage = () => {
     const [products, setProduct] = useState([]);
     const handleAdd = (products) => {
         dispatch(add(products))
-        alert('Your product is added in the cart')
+        alert('Your product is added in the cart 🎉🫠')
     }
     useEffect(() => {
         const fetchProducts = async () => {

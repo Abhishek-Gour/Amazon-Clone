@@ -1,0 +1,19 @@
+.fotterTop {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 60px;
+  background-color: #303853;
+  color: white;
+}
+.fotterCp {
+  cursor: pointer;
+}
+.fotterTop:hover {
+  background-color: hsla(0, 0%, 100%, 0.212);
+  border-bottom: 1px solid white;
+  cursor: pointer;
+}
+.footerHover:hover {
+  border-bottom: 1px solid white;
+}

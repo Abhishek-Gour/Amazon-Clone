@@ -11,7 +11,7 @@ import Login from './Components/Login';
 import { useEffect } from 'react';
 import { auth } from './firebase';
 import ProductPage from './Components/Pages/ProductPage';
-import Cart from './Components/Pages/Cart';
+import Cart from './Components/Pages/CheckoutProduct';
 import { Provider } from 'react-redux';
 import store from './Store/Store';
 import ElectronicsPage from './Components/Pages/ElectronicsPage';
@@ -40,7 +40,6 @@ function App() {
           <Routes>
             <Route path='/electronicspage' element={<ElectronicsPage/>}/>
             <Route path='/productpage' element={<ProductPage />} />
-            <Route path='/cart' element={<Cart />} />
             <Route path='/checkout' element={
               <>
               <Header/>

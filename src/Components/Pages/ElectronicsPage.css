@@ -1,3 +1,7 @@
+/* This is a CSS code defining the styles for a webpage related to electronics. It includes styles for
+the main page container, the electronics cart, the electronics image, the electronics wrapper, the
+electronics price, the electronics button, and the electronic title. It also includes hover effects
+for the electronics cart and the electronics button. */
 .MainElectronicsPage {
   background-color: #cec3c3;
   height: 100%;
@@ -12,15 +16,17 @@
   color: rgb(79, 70, 70);
 }
 .electronicsCart {
+  /* outline: 2px solid gray; */
   width: 300px;
   height: 300px;
   max-height: auto;
   background-color: white;
   display: flex;
   align-items: center;
+  position: relative;
   flex-direction: column;
   gap: 10px;
-  padding: 10px;
+  padding: 3rem 2rem;
   justify-content: center;
   border-radius: 5px;
 }
@@ -38,8 +44,8 @@
   gap: 20px;
 }
 .electronicsPrice {
-    margin-top: 5px;
-    padding: 5px;
+  margin-top: 5px;
+  padding: 5px;
 }
 .electronicsBtn {
   border: none;
