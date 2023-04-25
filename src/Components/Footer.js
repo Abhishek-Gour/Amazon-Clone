@@ -1,3 +1,8 @@
+/**
+ * The function exports a React component for a website footer with links and buttons.
+ * @returns The `Footer` component is being returned, which contains the HTML and JSX code for the
+ * footer section of a website.
+ */
 
 import React from 'react'
 import './Footer.css';

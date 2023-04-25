@@ -1,3 +1,10 @@
+/**
+ * The HeaderBottom function returns a React component that displays a navigation menu and a link to
+ * shop for electronics.
+ * @returns A React functional component that renders a header bottom section with a left navigation
+ * menu and a right navigation section. The left navigation menu contains a dropdown menu with links to
+ * different pages, while the right navigation section contains a link to the electronics page.
+ */
 import React from 'react'
 import './HeaderBottom.css'
 import MenuSharpIcon from '@mui/icons-material/MenuSharp';

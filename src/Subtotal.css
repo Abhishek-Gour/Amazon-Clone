@@ -1,3 +1,9 @@
+/* This is a CSS code defining the styles for a subtotal section of a webpage. It sets the display to
+flex with a column direction and space between items, sets the width and height to 300px and 100px
+respectively, adds padding and a background color, and sets a border with a radius. It also defines
+styles for a gift section within the subtotal, including aligning items and adding margin to an
+input element. Finally, it defines styles for a button within the subtotal, including a background
+color, border radius, padding, width, height, and border color. */
 .subtotal {
     display: flex;
     flex-direction: column;

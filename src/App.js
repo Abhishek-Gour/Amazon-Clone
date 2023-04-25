@@ -1,3 +1,10 @@
+/**
+ * This is the main function of a React app that sets up the routes and components for different pages,
+ * and includes authentication and a Redux store.
+ * @returns The App component is being returned, which contains the routing logic and renders different
+ * components based on the current URL path. It also includes the Provider component from the
+ * react-redux library to provide the Redux store to all components in the app.
+ */
 import './App.css';
 import Footer from './Components/Footer';
 import Header from './Components/Header';

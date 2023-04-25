@@ -1,3 +1,4 @@
+/* This code is setting up a data layer using React's Context API. It exports three things: */
 import React,{createContext,useContext,useReducer} from 'react'
 
 //Prepares the dataLayer

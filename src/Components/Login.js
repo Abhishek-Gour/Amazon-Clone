@@ -1,3 +1,9 @@
+/**
+ * This is a React component for a login page that allows users to sign in or register using Firebase
+ * authentication.
+ * @returns The Login component is being returned, which contains the HTML and logic for the login page
+ * of an Amazon clone website.
+ */
 import React, { useState } from 'react'
 import './Login.css'
 import { Link, useNavigate } from 'react-router-dom'

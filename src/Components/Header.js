@@ -1,3 +1,8 @@
+/**
+ * This is a React component for a header section of a website with various icons and links.
+ * @returns The Header component is being returned, which contains the HTML and JSX code for the header
+ * section of a website.
+ */
 import React from 'react'
 import './Header.css'
 import FmdGoodOutlinedIcon from '@mui/icons-material/FmdGoodOutlined';

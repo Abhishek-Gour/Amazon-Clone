@@ -1,3 +1,6 @@
+/* This CSS code sets the default padding and margin of all HTML elements to 0 and sets the box-sizing
+property to border-box. It also sets the background color of the body element to #e9e9e9. This is a
+common practice to ensure consistent styling across different browsers and devices. */
 * {
   padding: 0;
   margin: 0;

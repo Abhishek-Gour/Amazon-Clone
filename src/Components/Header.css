@@ -1,3 +1,7 @@
+/* This is a CSS code that defines the styles for a header section of a website. It imports two Google
+fonts, Poppins and Roboto, and sets some general styles for the page such as cursor, border,
+padding, and font-family. It also defines the styles for the header section, including the logo,
+delivery location, search field, and right navigation. */
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Roboto:wght@300;400;500;700&display=swap");
 .cp {
   cursor: pointer;

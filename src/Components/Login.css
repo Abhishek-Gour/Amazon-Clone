@@ -1,3 +1,8 @@
+/* This is a CSS code defining the styling for a login page. It includes styles for the login
+container, form inputs, buttons, and other elements. The `.login` class defines the overall layout
+of the page, while the `.loginContainer` class defines the styling for the login form container. The
+`.loginSignInBtn` and `.createAccountBtn` classes define the styling for the login and create
+account buttons respectively. */
 .login {
     display: flex;
     flex-direction: column;

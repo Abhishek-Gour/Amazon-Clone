@@ -1,3 +1,9 @@
+/**
+ * The Subtotal component displays the total price of items in the shopping basket and an option to
+ * mark the order as a gift.
+ * @returns The Subtotal component is being returned, which contains the JSX code for displaying the
+ * subtotal of the items in the basket and a button to proceed to checkout.
+ */
 import React from 'react'
 import './Subtotal.css'
 import CurrencyFormat from 'react-currency-format'
