@@ -29,7 +29,7 @@ function Login() {
     e.preventDefault();
     auth.createUserWithEmailAndPassword(email,password).then((auth) => {
       // Succefully created a new user 
-      alert("Ammazing You are register 🎉🌟",auth);
+      alert("Ammazing You are successfully register 🎉🌟",auth);
       if(auth) {
         navigate('/')
       }

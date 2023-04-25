@@ -12,7 +12,7 @@ for the electronics cart and the electronics button. */
   flex-direction: column;
 }
 .MainElectronicsPage > h2 {
-  margin-top: 10px;
+  margin-top: 14px;
   color: rgb(79, 70, 70);
 }
 .electronicsCart {
