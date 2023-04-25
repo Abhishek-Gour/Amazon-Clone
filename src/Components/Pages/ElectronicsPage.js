@@ -1,3 +1,11 @@
+/**
+ * This is a React component that displays a list of electronics items and allows the user to add them
+ * to their cart.
+ * @returns The `ElectronicsPage` component is being returned, which contains the JSX code for
+ * displaying a header, a list of electronic products with their images, titles, prices, and an "Add to
+ * cart" button for each product. The `handleAdd` function is also defined to dispatch an action to add
+ * the selected product to the cart.
+ */
 import React from 'react'
 import './ElectronicsPage.css'
 

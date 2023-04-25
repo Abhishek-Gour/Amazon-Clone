@@ -1,3 +1,7 @@
+/* This is a CSS code that imports two Google Fonts (Poppins and Roboto) and sets the font family for
+all elements to Roboto. It also styles various elements of a product page, including the wrapper,
+cards, titles, prices, images, and buttons. It also includes a hover effect for the product cards
+and a style for a "remove from cart" button. */
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Roboto:wght@300;400;500;700&display=swap");
 
 * {
@@ -26,6 +30,7 @@
 .productsPageWrapper {
   background-color: #cec3c3;
   margin: 20px;
+  width: 98%;
   min-height: 100vh;
   max-height: auto;
   padding: 20px;

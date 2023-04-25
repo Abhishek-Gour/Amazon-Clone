@@ -1,3 +1,8 @@
+/* This is a CSS code defining the styles for a website footer. It includes styles for the footer
+container, top section, middle section, and last section. It also includes styles for various
+elements within the footer such as lists, buttons, and images. The `.footerCp` class sets the cursor
+to a pointer, `.fotterTop:hover` changes the background color on hover, `.footerHover:hover` adds a
+border on hover, and `.footerLastBtn` defines the styles for a button. */
 .footerCp {
     cursor: pointer;
 }

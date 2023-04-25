@@ -1,5 +1,8 @@
+/* Defining a CSS class called "checoutProduct" and setting its display property to "flex" and its
+margin-top and margin-bottom properties to 20 pixels each. This class can be applied to HTML
+elements to give them these styles. */
 .checoutProduct {
-    display: flex;
-    margin-top: 20px;
-    margin-bottom: 20px;
+  display: flex;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }

@@ -1,3 +1,9 @@
+/**
+ * The CheckoutProduct function is a React component that displays product information and a remove
+ * button for items in a shopping cart.
+ * @returns The CheckoutProduct component is being returned, which displays the product image, title,
+ * price, rating, and a "Remove from basket" button.
+ */
 import React from 'react'
 import './CheckoutProduct.css'
 const CheckoutProduct = ({id,image,title,price,rating}) => {

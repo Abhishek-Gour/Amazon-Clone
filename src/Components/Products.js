@@ -1,3 +1,12 @@
+/**
+ * The Products function returns a JSX element that displays various product categories and a carousel
+ * of new international customer purchases.
+ * @returns The `Products` component is being returned, which contains HTML elements and a `Carousel`
+ * component from the `react-multi-carousel` library.
+ */
+/* `import React from 'react'` is importing the React library, which is necessary for building React
+components and applications. It allows us to use React's core features such as JSX syntax, component
+creation, and state management. */
 import React from 'react'
 import './Products.css'
 import Carousel from 'react-multi-carousel';

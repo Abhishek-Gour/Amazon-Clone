@@ -1,3 +1,8 @@
+/**
+ * The Checkout function displays the items in the shopping basket and the subtotal component.
+ * @returns The Checkout component is being returned, which contains the shopping basket items and the
+ * subtotal component.
+ */
 import React from 'react'
 import './Checkout.css'
 import Subtotal from '../Subtotal'

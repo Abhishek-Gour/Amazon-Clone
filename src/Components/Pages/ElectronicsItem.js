@@ -1,3 +1,5 @@
+/* This is a JavaScript code that defines an array of electronics items with their respective
+properties such as id, title, price, and image. The array is then exported as a default module. */
 const electronicsItem = [
     {
         id:1,
