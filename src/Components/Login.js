@@ -40,7 +40,7 @@ function Login() {
   return (
     <div className='login'>
       <Link to='/'>
-        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR9IafszyEkRKd4sa2GrkS7nwHSak7RKmeEjn1HhoOn&s" className='cp hover headerLogo' alt="amazon logo" className='amazonLogo' />
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR9IafszyEkRKd4sa2GrkS7nwHSak7RKmeEjn1HhoOn&s" className='cp hover headerLogo' alt="amazon log" className='amazonLogo' />
       </Link >
       <div className="loginContainer">
         <h1>Sign-In</h1>

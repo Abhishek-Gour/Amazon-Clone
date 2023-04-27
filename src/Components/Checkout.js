@@ -3,38 +3,106 @@
  * @returns The Checkout component is being returned, which contains the shopping basket items and the
  * subtotal component.
  */
-import React from 'react'
+import React, { useEffect } from 'react'
 import './Checkout.css'
 import Subtotal from '../Subtotal'
 import CheckoutProduct from './Pages/CheckoutProduct'
-import { useStateValue } from '../StateProvider'
+import { useDispatch, useSelector } from 'react-redux'
+import { calculateTotal, removeAllItems } from '../Store/CartSlice'
+// import { removeAllItems } from '../../Store/CartSlice';
 const Checkout = () => {
-  const [{basket},dispatch] = useStateValue();
+  const cart = useSelector((state) => state.cart);
+  const dispath = useDispatch();
+  useEffect(() => {
+    dispath(calculateTotal())
+  }, [cart])
+  const { cartItems, totalQuantity, totalPrice, } = useSelector((state) => state.cart)
+  const deleteAllItem = () => {
+    dispath(removeAllItems())
+  }
   return (
     <div className='checkout'>
       <div className="checkout-left">
         <div>
           <h2 className="checkout-title">
-            Your shopping Basket
+            Your selceted products
           </h2>
-          {basket.map(item => (
-            <CheckoutProduct
-            id={item.id}
-            title = {item.title}
-            image={item.image}
-            price = {item.price}
-            rating={item.rating}
-            />
-          ))}
-          {/* Checkout product */}
-          <CheckoutProduct
-          />
+          {
+            cartItems.length === 0 ? (
+              <h1>You cart is empty</h1>
+            ) : (
+              <>
+                {
+                  cartItems?.map(item => (
+                    <CheckoutProduct
+                      id={item.id}
+                      title={item.title}
+                      image={item.image}
+                      price={item.price}
+                      rating={item.rating}
+                    />
+                  ))
+                }
+
+
+                <div className="clearList-subTotal">
+                  <button className='remove-all-items' onClick={() => deleteAllItem()}>Remove all items</button>
+                  <div className="subtotal-items-price">
+                    <h2>Subtotal</h2>
+                    <span>({cartItems.length} Items:)</span>
+                    <h3>$ {totalPrice}</h3>
+                  </div>
+                </div>
+              </>
+            )
+          }
+
         </div>
       </div>
       <div className="checkout-right">
-        <Subtotal/>
-        <h2>The subtotal will go here</h2>
+        <div className="userInfo">
+          <div className="required-info">
+            <h4>Shipping address</h4>
+            <input type="text" onChange={(e) => e.target.value} required />
+          </div>
+          <div className="required-info">
+            <h4>Contact number</h4>
+            <input type="tel" required />
+          </div>
+          <div className="required-info">
+            <h4>Email</h4>
+            <input type="email" required placeholder='xyz@userEmail.com' />
+          </div>
+          <div className="required-info">
+            <h4>Zip number</h4>
+            <input type="tel" name="" id="" />
+          </div>
+          <div className="required-info state-disct">
+            <div className="state-disct-input  state">
+              <h4>State</h4>
+              <input type="text" onChange={(e) => e.target.value} />
+            </div>
+
+            <div className=" state-disct-input disct">
+              <h4>Dist</h4>
+              <input type="text" onChange={(e) => e.target.value} />
+            </div>
+          </div>
+
+          <div className="payment-option state-disct">
+            <div className="online-ofline online">
+              <input type="checkbox" /><span>Case on delivery</span>
+            </div>
+            <div className="online-ofline ofline">
+              <input type="checkbox" /><span>
+                Through UPI
+              </span>
+            </div>
+          </div>
+        </div>
+        <Subtotal />
       </div>
+
     </div>
   )
 }

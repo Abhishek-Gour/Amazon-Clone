@@ -18,41 +18,29 @@ import Login from './Components/Login';
 import { useEffect } from 'react';
 import { auth } from './firebase';
 import ProductPage from './Components/Pages/ProductPage';
-import Cart from './Components/Pages/CheckoutProduct';
-import { Provider } from 'react-redux';
+import { ToastContainer } from 'react-toastify';
+import  "react-toastify/dist/ReactToastify.css";
+import { Provider, useSelector } from 'react-redux';
 import store from './Store/Store';
 import ElectronicsPage from './Components/Pages/ElectronicsPage';
-
+import { useDispatch } from 'react-redux';
+import { calculateTotal } from './Store/CartSlice';
 function App() {
-  useEffect(() => {
-    //Will only run when the app components loads......
-    auth.onAuthStateChanged(authUser => {
-
-
-      if (authUser) {
-        // It check The user was  logged in or User is just logged in
-
-      } else {
-        // It user is logged out
-
-
-      }
-    })
-  }, [])
+ 
   return (
-    <div className='App'>
-      <Provider store={store}>
-        <Router>
+      <div className='App'>
 
+        <Router>
+          <ToastContainer />
           <Routes>
-            <Route path='/electronicspage' element={<ElectronicsPage/>}/>
+            <Route path='/electronicspage' element={<ElectronicsPage />} />
             <Route path='/productpage' element={<ProductPage />} />
             <Route path='/checkout' element={
               <>
-              <Header/>
-              <Checkout/>
+                <Header />
+                <Checkout />
               </>
-            }/>
+            } />
             <Route path='/login' element={<Login />} />
             <Route path='/' element={
               <>
@@ -65,9 +53,7 @@ function App() {
             } />
           </Routes>
         </Router>
-      </Provider>
-    </div>
-
+      </div>
   );
 }
 

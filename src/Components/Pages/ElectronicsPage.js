@@ -12,15 +12,12 @@ import './ElectronicsPage.css'
 import './ElectronicsPage.css'
 import electronicsItem from './ElectronicsItem'
 import Header from '../Header';
-import { useDispatch } from 'react-redux';
+import { useDispatch, useSelector } from 'react-redux';
 import { add } from '../../Store/CartSlice';
-
 const ElectronicsPage = () => {
   const dispatch = useDispatch();
-  // const [products, setProduct] = useState([]);
-  const handleAdd = (electronicsItem) => {
-    dispatch(add(electronicsItem))
-    alert('Your product is added in the cart 🎉🫠')
+  const handleAddToCart = (item) => {
+    dispatch(add(item))
   }
 
   return (
@@ -29,12 +26,12 @@ const ElectronicsPage = () => {
       <h2>Your Electric Products</h2>
       <div className="elcectronicWrapper">
         {
-          electronicsItem.map((electronicsItem, i) => (
-            <div className="electronicsCart" key={i}>
-              <img src={electronicsItem.image} alt="Electronics" className='electronicsImage' />
-              <h4 className='electronicTtitle'>{electronicsItem.title}</h4>
-              <h5 className='electronicsPrice'>{electronicsItem.price}</h5>
-              <button className='electronicsBtn' onClick={handleAdd}>Add to cart</button>
+          electronicsItem.map((item, i) => (
+            <div className="electronicsCart" key={item.id}>
+              <img src={item.image} alt="Electronics" className='electronicsImage' />
+              <h4 className='electronicTtitle'>{item.title}</h4>
+              <h5 className='electronicsPrice'>{item.price}</h5>
+              <button className='electronicsBtn' onClick={() => handleAddToCart(item)}>Add to cart</button>
             </div>
           ))
         }

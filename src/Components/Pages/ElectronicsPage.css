@@ -3,7 +3,7 @@ the main page container, the electronics cart, the electronics image, the electr
 electronics price, the electronics button, and the electronic title. It also includes hover effects
 for the electronics cart and the electronics button. */
 .MainElectronicsPage {
-  background-color: #cec3c3;
+  background-color: #dddddd !important;
   height: 100%;
   width: 100%;
   display: flex;
@@ -32,6 +32,7 @@ for the electronics cart and the electronics button. */
 }
 .electronicsImage {
   height: 150px;
+  width: 100%;
   padding: 10px;
   object-fit: contain;
 }
@@ -61,18 +62,20 @@ for the electronics cart and the electronics button. */
 }
 .electronicsCart:hover {
   cursor: pointer;
-  background-color: #2d3331;
-  color: white;
+  /* background-color: #2d3331; */
+  color: black;
   border-radius: 10px;
-  height: 310px;
-  width: 310px;
+  box-shadow: 0 8px 50px rgba(0, 0, 0, 0.2);
+  padding: 60px 10px;
   z-index: 1;
-  transition: all 0.5s ease;
+  transition: all 0.3s ease-out;
+  transform: scale(1.07);
 }
 .electronicsBtn:hover {
   cursor: pointer;
-  background-color: #2d3331;
-  color: white;
-  border-radius: 3px;
   border: 2px solid white;
+  color: white;
+  background-color: #2d3331;
+  transition: all 0.3s ease-out;
+  border-radius: 5px;
 }

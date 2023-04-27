@@ -44,3 +44,6 @@ a {
     align-items: center;
     font-weight: 500;
 }
+.rightNav {
+    margin-left: 5px;
+}

@@ -13,9 +13,8 @@ import axios from 'axios';
 const ProductPage = () => {
     const dispatch = useDispatch();
     const [products, setProduct] = useState([]);
-    const handleAdd = (products) => {
-        dispatch(add(products))
-        alert('Your product is added in the cart 🎉🫠')
+    const handleAdd = (product) => {
+        dispatch(add(product))
     }
     useEffect(() => {
         try {
@@ -36,12 +35,12 @@ const ProductPage = () => {
             <div className='productsPageWrapper'>
 
                 {
-                    products.map(product => (
+                    products?.map(product => (
                         <div className="ProductPageCard" key={product.id}>
                             <img src={product.image} alt="product img" />
                             <h4 className='title'>{product.title}</h4>
                             <h5 className='price'>{product.price}</h5>
-                            <button className='btn' onClick={() => handleAdd(products)}>Add to cart</button>
+                            <button className='btn' onClick={() => handleAdd(product)}>Add to cart</button>
                         </div>
                     ))
                 }

@@ -11,7 +11,7 @@ import SearchIcon from '@mui/icons-material/Search';
 import { Link } from 'react-router-dom';
 import { useSelector } from 'react-redux';
 function Header() {
-    const items = useSelector((state) => state.cart);
+    const cart = useSelector((state) => state.cart);
     return (
         <div className='headerTop'>
             <div className="navLeft">
@@ -61,7 +61,7 @@ searchInput'/>
             <Link to='/checkout'>
                 <div className="headerBasket cp hover">
                     <AddShoppingCartSharpIcon />
-                    <span>{items.length}</span>
+                    <span>{cart.cartItems.length}</span>
                 </div>
             </Link>
         </div>

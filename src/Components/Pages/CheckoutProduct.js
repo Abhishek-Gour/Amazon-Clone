@@ -6,25 +6,46 @@
  */
 import React from 'react'
 import './CheckoutProduct.css'
-const CheckoutProduct = ({id,image,title,price,rating}) => {
+import { remove } from '../../Store/CartSlice';
+import { useDispatch } from 'react-redux'
+const CheckoutProduct = ({ id, image, title, price, rating }) => {
+  const dispatch = useDispatch();
+
+  const handleRemove = (id) => {
+    dispatch(remove(id))
+  }
   return (
     <div className='checkoutProduct'>
-      <img src={image} alt="checkoutProduct img" className='checkoutProduct-image'/>
 
       <div className='checkoutProduct-info'>
-        <p className='checkoutProduct-title'>{title}</p>
-        <p className='checkoutProduct-price'>
-            <small>$</small>
-            <strong>{price}</strong>
-        </p>
-        <div className='checkoutProduct-rating'>
-            {Array(rating)
-            .fill()
-            .map((_,i) => (
-                <p>🌟</p>
-            ))}
+        <img src={image} alt="checkoutProduct img" className='checkoutProduct-image' />
+        <div className="checkoutProduct-info-main">
+          <p className='checkoutProduct-title'>{title}</p>
+          <div className="remove-quantity-btn">
+            <button onClick={() => handleRemove(id)} className='remove-btn'>Remove from basket</button>
+
+            <span className='quantity-btn'>
+              Qty:
+              <select name="quantity" id="itemQuantity" >
+                <option value="1" selected>1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+              </select>
+            </span>
+          </div>
         </div>
-        <button>Remove from basket</button>
+
+        <p className='checkoutProduct-price'>
+          <small>$</small>
+          <strong>{price}</strong>
+        </p>
       </div>
     </div>
   )

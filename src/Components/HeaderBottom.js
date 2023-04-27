@@ -37,7 +37,7 @@ function HeaderBottom() {
       </div>
       <Link to='/electronicspage'>
         <div className="rightNav cp hover">
-          <h4>Shop deals in Electronics</h4>
+            <h4>Shop deals in Electronics</h4>
         </div>
       </Link>
     </div>

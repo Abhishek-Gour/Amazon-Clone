@@ -9,15 +9,17 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-import { StateProvider } from './StateProvider';
-import reducer, { initialState } from './reducer';
-
+import { Provider } from 'react-redux';
+import store from './Store/Store';
+// import { useDispatch } from 'react-redux';
+import { calculateTotal } from './Store/CartSlice';
+store.dispatch(calculateTotal())
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <StateProvider initialState={initialState} reducer={reducer}>
+    <Provider store={store}>
       <App />
-    </StateProvider>
+    </Provider>
   </React.StrictMode>
 );
 

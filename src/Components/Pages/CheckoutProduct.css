@@ -1,8 +1,71 @@
 /* Defining a CSS class called "checoutProduct" and setting its display property to "flex" and its
 margin-top and margin-bottom properties to 20 pixels each. This class can be applied to HTML
 elements to give them these styles. */
-.checoutProduct {
+
+.checkoutProduct {
   display: flex;
-  margin-top: 20px;
-  margin-bottom: 20px;
+  padding: 5px;
+  height: 200px;
+  width: 100%;
+  margin-top: 10px;
+  background-color: white;
+  border-bottom: 2px solid gray;
+}
+.checkoutProduct-info {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  width: 100%;
+  padding: 5px;
+  justify-content: space-between;
+}
+.checkoutProduct-info-main {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+}
+.remove-quantity-btn {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.remove-btn {
+  padding: 5px;
+  margin-top: 5px;
+  border-radius: 2px;
+  /* border: none; */
+  border-color: #a88734 #9c7e31 #846a29;
+  background-color: #f0c14b;
+  color: #13110c;
+  font-weight: 500;
+  cursor: pointer;
+}
+#itemQuantity {
+  border: none;
+  font-size: 16px;
+  font-weight: 500;
+  background-color: #dddddd;
+  cursor: pointer;
+}
+.quantity-btn {
+  border: 1px solid black;
+  padding: 0px 5px;
+  border-radius: 5px;
+  background-color: #dddddd;
+}
+.checkoutProduct-title {
+  font-size: 18px;
+}
+/* .checkoutProduct:hover {
+  background-color: black;
+  color: white;
+  cursor: pointer;
+  transition: all 0.5s ease-out;
+} */
+.checkoutProduct-image {
+  min-width: auto;
+  max-width: 120px;
+  object-fit: contain;
+  background-color: antiquewhite;
 }
