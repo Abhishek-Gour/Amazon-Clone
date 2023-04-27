@@ -94,7 +94,7 @@ font weights. */
   gap: 10px;
 }
 
-.state-disct-input  input {
+.state-disct-input input {
   margin: 5px 0px;
   width: 100%;
   padding: 5px 2px;
@@ -123,4 +123,13 @@ font weights. */
 }
 .online-ofline > input {
   margin-right: 5px;
+}
+#stateOption {
+  margin: 5px 0px;
+  width: 100%;
+  padding: 5px 0px;
+  height: 30px;
+  font-size: 16px;
+  border-radius: 2px;
+  border: none;
 }

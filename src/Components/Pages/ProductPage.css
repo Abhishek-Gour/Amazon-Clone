@@ -45,7 +45,7 @@ and a style for a "remove from cart" button. */
   cursor: pointer;
   box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.3);
   border-radius: 10px;
-  transition: all 0.3s ease-in-out;
+  transition: all 1s ease-in-out;
    transform: scale(1.07);
 }
 .ProductPageCard {

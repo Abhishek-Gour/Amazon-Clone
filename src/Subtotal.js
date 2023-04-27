@@ -8,8 +8,21 @@ import React from 'react'
 import './Subtotal.css'
 import CurrencyFormat from 'react-currency-format'
 import { useSelector } from 'react-redux'
+import { toast } from "react-toastify";
 
 const Subtotal = () => {
+
+  const succesfullyPlaced = () => {
+    toast.success(`Order Placed Successfully come again later`, {
+      position: 'bottom-left',
+      autoClose: 5000,
+      hideProgressBar: false,
+      closeOnClick: true,
+      pauseOnHover: true,
+      draggable: true,
+      progress: undefined,
+    })
+  }
   const cart = useSelector((state) => state.cart)
   return (
     <div className='subtotal'>
@@ -30,7 +43,7 @@ const Subtotal = () => {
       thousandSeparator={true}
       prefix={'$'}
       />
-      <button>Proceed to Payment</button>
+      <button onClick={succesfullyPlaced}>Proceed to Payment</button>
     </div>
   )
 }

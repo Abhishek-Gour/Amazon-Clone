@@ -80,7 +80,25 @@ const Checkout = () => {
           <div className="required-info state-disct">
             <div className="state-disct-input  state">
               <h4>State</h4>
-              <input type="text" onChange={(e) => e.target.value} />
+              <select name='stateOption' id='stateOption'>
+                <option value="States" selected>Select state</option>
+                <option value="States">Andhra Pradesh</option>
+                <option value="States" >Arunachal Pradesh</option>
+                <option value="States" >Assam</option>
+                <option value="States" >Bihar</option>
+                <option value="States" >Chhattisgarh</option>
+                <option value="States" >Goa</option>
+                <option value="States" >Gujrat</option>
+                <option value="States" >Haryana</option>
+                <option value="States" >Himachal Pradesh</option>
+                <option value="States" >Jharkhand</option>
+                <option value="States" >Karnataka</option>
+                <option value="States" >Kerala</option>
+                <option value="States" >Madhya Pradesh</option>
+                <option value="States" >Maharashtra</option>
+                <option value="States" >Manipur</option>
+
+              </select>
             </div>
 
             <div className=" state-disct-input disct">
