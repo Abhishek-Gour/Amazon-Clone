@@ -21,16 +21,16 @@ function HeaderBottom() {
         </Link>
         <ul>
           <Link to='/productpage'>
-            <li className='cp hover'><a href="#">Today's Deals</a></li>
+            <li className='cp hover'>Today's Deals</li>
           </Link>
           <Link to='/productpage'>
-            <li className='cp hover'><a href="#">Registry</a></li>
+            <li className='cp hover'>Registry</li>
           </Link>
           <Link to='/productpage'>
-            <li className='cp hover'><a href="#">Customer Service</a></li>
+            <li className='cp hover'>Customer Service</li>
           </Link>
           <Link to='/productpage'>
-            <li className='cp hover'><a href="#">Gift Card</a></li>
+            <li className='Gift Card'>Gift Card</li>
           </Link>
 
         </ul>

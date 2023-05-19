@@ -9,14 +9,13 @@ import Subtotal from '../Subtotal'
 import CheckoutProduct from './Pages/CheckoutProduct'
 import { useDispatch, useSelector } from 'react-redux'
 import { calculateTotal, removeAllItems } from '../Store/CartSlice'
-// import { removeAllItems } from '../../Store/CartSlice';
 const Checkout = () => {
   const cart = useSelector((state) => state.cart);
   const dispath = useDispatch();
   useEffect(() => {
     dispath(calculateTotal())
   }, [cart])
-  const { cartItems, totalQuantity, totalPrice, } = useSelector((state) => state.cart)
+  const { cartItems ,totalPrice} = useSelector((state) => state.cart)
   const deleteAllItem = () => {
     dispath(removeAllItems())
   }

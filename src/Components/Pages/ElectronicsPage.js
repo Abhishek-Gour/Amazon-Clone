@@ -12,7 +12,7 @@ import './ElectronicsPage.css'
 import './ElectronicsPage.css'
 import electronicsItem from './ElectronicsItem'
 import Header from '../Header';
-import { useDispatch, useSelector } from 'react-redux';
+import { useDispatch} from 'react-redux';
 import { add } from '../../Store/CartSlice';
 const ElectronicsPage = () => {
   const dispatch = useDispatch();

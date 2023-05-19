@@ -7,7 +7,6 @@ for the electronics cart and the electronics button. */
   height: 100%;
   width: 100%;
   display: flex;
-  /* justify-content: center; */
   align-items: center;
   flex-direction: column;
 }
@@ -16,7 +15,6 @@ for the electronics cart and the electronics button. */
   color: rgb(79, 70, 70);
 }
 .electronicsCart {
-  /* outline: 2px solid gray; */
   width: 300px;
   height: 300px;
   max-height: auto;
@@ -62,7 +60,6 @@ for the electronics cart and the electronics button. */
 }
 .electronicsCart:hover {
   cursor: pointer;
-  /* background-color: #2d3331; */
   color: black;
   border-radius: 10px;
   box-shadow: 0 8px 50px rgba(0, 0, 0, 0.2);

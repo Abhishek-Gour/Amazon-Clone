@@ -34,7 +34,6 @@ elements to give them these styles. */
   padding: 5px;
   margin-top: 5px;
   border-radius: 2px;
-  /* border: none; */
   border-color: #a88734 #9c7e31 #846a29;
   background-color: #f0c14b;
   color: #13110c;
@@ -57,12 +56,6 @@ elements to give them these styles. */
 .checkoutProduct-title {
   font-size: 18px;
 }
-/* .checkoutProduct:hover {
-  background-color: black;
-  color: white;
-  cursor: pointer;
-  transition: all 0.5s ease-out;
-} */
 .checkoutProduct-image {
   min-width: auto;
   max-width: 120px;

@@ -1,3 +1,4 @@
+
 /**
  * This is the main function of a React app that sets up the routes and components for different pages,
  * and includes authentication and a Redux store.
@@ -15,16 +16,10 @@ import ImageSlider from "./ImageSlider";
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Checkout from './Components/Checkout';
 import Login from './Components/Login';
-import { useEffect } from 'react';
-import { auth } from './firebase';
 import ProductPage from './Components/Pages/ProductPage';
 import { ToastContainer } from 'react-toastify';
 import  "react-toastify/dist/ReactToastify.css";
-import { Provider, useSelector } from 'react-redux';
-import store from './Store/Store';
 import ElectronicsPage from './Components/Pages/ElectronicsPage';
-import { useDispatch } from 'react-redux';
-import { calculateTotal } from './Store/CartSlice';
 function App() {
  
   return (
