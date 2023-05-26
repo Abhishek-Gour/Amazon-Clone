@@ -4,18 +4,18 @@ elements within the footer such as lists, buttons, and images. The `.footerCp` c
 to a pointer, `.fotterTop:hover` changes the background color on hover, `.footerHover:hover` adds a
 border on hover, and `.footerLastBtn` defines the styles for a button. */
 .footerCp {
-    cursor: pointer;
+  cursor: pointer;
 }
 .fotterTop:hover {
-    background-color: #ffffff36;
+  background-color: #ffffff36;
 }
 .footerHover:hover {
-    border-bottom: 1px solid white;
-    /* width: 50px; */
+  border-bottom: 1px solid white;
+  /* width: 50px; */
 }
 .footer {
   width: 100%;
-  margin-top: 80px;
+  margin-top: 5rem;
   background-color: #272d41;
   height: 100%;
 }
@@ -23,53 +23,54 @@ border on hover, and `.footerLastBtn` defines the styles for a button. */
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 60px;
+  height: 3.75rem;
   background-color: #303853;
   color: white;
 }
 
 .footerMid {
-    display: flex;
-    align-items: center;
-    margin-top: 0px;
-    justify-content: space-around;
-    color: white;
-    height: 500px;
-    padding: 20px;
+  display: flex;
+  align-items: center;
+  margin-top: 0px;
+  justify-content: space-around;
+  color: white;
+  height: 33.25rem;
+  overflow-x: hidden;
+  padding: 1.25rem;
 }
 
 .footerList1 {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
-.footerList1 ul li{
-    margin-bottom: 10px;
+.footerList1 ul li {
+  margin-bottom: 0.625rem;
 }
 
 /* footer last */
 .footerLast {
-    display: flex;
-    align-items: center;
-    border-top: 1px solid #e1d2d228;
-    justify-content: center;
-    height: auto;
-    padding: 20px;
-    height: 200px;
-    gap:20px;
+  display: flex;
+  align-items: center;
+  border-top: 1px solid #e1d2d228;
+  justify-content: center;
+  height: auto;
+  padding: 1.25rem;
+  height: 12rem;
+  gap: 1.25rem;
+  overflow-y: hidden;
 }
 .footerLast img {
-    width: 100px;
-    margin-left: 20px;
+  width: 6.25rem;
+  margin-left: 6.25rem;
 }
 .footerLastBtn {
-    background-color: #272d41;
-    border: none;
-    color: gray;
-    font-size: 16px;
-    padding: 10px 10px;
-    border-radius: 3px;
-    border: 1px solid #66635e;
-
+  background-color: #272d41;
+  border: none;
+  color: gray;
+  font-size: 1rem;
+  padding: 0.625rem 0.625rem;
+  border-radius: 0.1875rem;
+  border: 0.0625rem solid #66635e;
 }

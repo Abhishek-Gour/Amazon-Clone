@@ -13,7 +13,7 @@ import { toast } from "react-toastify";
 const Subtotal = () => {
 
   const succesfullyPlaced = () => {
-    toast.success(`Order Placed Successfully come again later`, {
+    toast.success(`Order Placed Successfully`, {
       position: 'bottom-left',
       autoClose: 5000,
       hideProgressBar: false,

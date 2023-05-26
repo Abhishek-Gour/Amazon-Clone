@@ -8,13 +8,13 @@ delivery location, search field, and right navigation. */
 }
 .hover:hover {
   border: 1px solid white;
-  padding: 4px 5px;
-  border-radius: 2px;
+  padding: 0.25rem 0.3125rem;
+  border-radius: 0.125rem;
 }
 .headerTop {
-  height: 60px;
+  height: 3.75rem;
   width: 100%;
-  font-size: 14px;
+  font-size: 0.875rem;
   z-index: 5;
   display: flex;
   align-items: center;
@@ -22,7 +22,8 @@ delivery location, search field, and right navigation. */
   position: sticky;
   top: 0;
   color: white;
-  padding: 10px;
+  padding: 0.625rem;
+  overflow-y: hidden;
   /* gap: 20px; */
   font-family: "Roboto", sans-serif;
 }
@@ -30,10 +31,10 @@ delivery location, search field, and right navigation. */
 .navLeft {
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: 0.625rem;
 }
 .headerLogo {
-  width: 100px;
+  width: 6.25rem;
   object-fit: contain;
 }
 .deliverIndia {
@@ -43,39 +44,39 @@ delivery location, search field, and right navigation. */
 .deliverLocation {
   display: flex;
   align-items: center;
-  margin-right: 10px;
+  margin-right: 0.625rem;
 }
 .upperLine {
   color: #c3c1c1;
   font-weight: 500;
-  font-size: 12px;
+  font-size: 0.75rem;
 }
 .lowerLine {
   font-weight: 700;
-  font-size: 14px;
+  font-size: 0.875rem;
 }
 
 /* search field */
 .itemSelection {
-  height: 36.1px;
-  width: 40px;
+  height: 2.25rem;
+  width: 2.5rem;
   border-radius: 5px 0px 0px 5px;
 }
 .searchArea {
   display: flex;
   align-items: center;
-  border-radius: 24px;
+  border-radius: 1.5rem;
   flex: 1;
 }
 .searchInput {
-  height: 35px;
-  padding: 10px;
+  height: 2.18rem;
+  padding: 0.625rem;
   border: none;
   width: 100%;
 }
 .searchIcon {
-  padding: 5px;
-  height: 35px !important;
+  padding: 0.3125rem;
+  height: 2.1875rem !important;
   background-color: #cd9042;
   color:  #0F1111;
   border-radius: 0px 5px 5px 0px;
@@ -89,10 +90,10 @@ delivery location, search field, and right navigation. */
 .hederOption {
   display: flex;
   flex-direction: column;
-  margin-left: 10px;
-  margin-right: 10px;
+  margin-left: 0.625rem;
+  margin-right: 0.625rem;
 }
 .headerBasket {
-  margin-left: 10;
-  margin-right: 10px;
+  margin-left: 0.625rem;
+  margin-right: 0.625rem;
 }
