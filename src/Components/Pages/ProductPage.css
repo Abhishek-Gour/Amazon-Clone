@@ -11,7 +11,7 @@ and a style for a "remove from cart" button. */
 .mainProductsPage {
   width: 100%;
   overflow-x: hidden;
-  font-size: 14px;
+  font-size: 0.875rem;
   z-index: 1;
   display: flex;
   justify-content: center;
@@ -19,12 +19,12 @@ and a style for a "remove from cart" button. */
   flex-direction: column;
 }
 .mainCartPage h2{
-  margin-top: 10px;
+  margin-top: 0.625rem;
 
 }
 
 .mainProductsPage h2 {
-  margin-top: 20px;
+  margin-top: 1.25rem;
 }
 
 .productsPageWrapper {
@@ -32,48 +32,48 @@ and a style for a "remove from cart" button. */
   width: 98%;
   min-height: 100vh;
   max-height: auto;
-  padding: 20px;
+  padding: 1.25rem;
   align-items: center;
   justify-content: center;
   border-radius: 10px;
   display: flex;
-  gap: 20px;
+  gap: 1.25rem;
   flex-wrap: wrap;
 }
 .ProductPageCard:hover {
   cursor: pointer;
   box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.3);
-  border-radius: 10px;
+  border-radius: 0.625rem;
   transition: all 0.4s ease-out;
    transform: scale(1.07);
 }
 .ProductPageCard {
   background-color: white;
-  padding: 10px;
+  padding: 0.625rem;
   align-items: center;
   justify-content: center;
-  border-radius: 5px;
+  border-radius: 0.3125rem;
   display: flex;
-  width: 350px;
-  height: 200px;
+  width: 21.875rem;
+  height: 12.5rem;
   flex-direction: column;
 }
 .ProductPageCard .title {
-  padding: 5px;
+  padding: 0.3125rem;
 }
 .ProductPageCard .price {
   padding: 5px 0px;
 }
 
 .ProductPageCard img {
-  height: 80px;
+  height: 5rem;
   object-fit: contain;
 }
 .ProductPageCard .btn {
   border: none;
   background-color: white;
-  padding: 10px;
-  border-radius: 3px;
+  padding: 0.625rem;
+  border-radius: 0.1875rem;
   color: #2d3331;
   transition: all 0.3s ease-out;
   font-weight: bold;
@@ -87,5 +87,6 @@ and a style for a "remove from cart" button. */
 
 .removeToCartBtn {
   display: flex;
-  gap: 20px;
+  gap: 1.25rem;
 }
+

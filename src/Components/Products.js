@@ -41,33 +41,33 @@ function Products() {
 
                 <div className="cart">
                     <h3>Get fit at home</h3>
-                    <a href="#"><img src="./images/asset 14.jpeg" alt="" /></a>
+                    <a href="/"><img src="./images/asset 14.jpeg" alt="" /></a>
                     <Link to='/productpage'>
-                        <a href="#" className='elporeBtnHover'>Explore now</a>
+                        <a href="/" className='elporeBtnHover'>Explore now</a>
                     </Link>
                 </div>
 
                 <div className="cart">
                     <h3>Dresses</h3>
-                    <a href="#"><img src="./images/asset 11.jpeg" alt="" /></a>
+                    <a href="/"><img src="./images/asset 11.jpeg" alt="" /></a>
                     <Link to='/productpage'>
-                        <a href="#" className='elporeBtnHover'>Explore now</a>
+                        <a href="/" className='elporeBtnHover'>Explore now</a>
                     </Link>
                 </div>
 
                 <div className="cart">
                     <h3>Beauty picks</h3>
-                    <a href="#"><img src="./images/asset 12.jpeg" alt="" /></a>
+                    <a href="/"><img src="./images/asset 12.jpeg" alt="" /></a>
                     <Link to='/productpage'>
-                        <a href="#" className='elporeBtnHover'>Explore now</a>
+                        <a href="/" className='elporeBtnHover'>Explore now</a>
                     </Link>
                 </div>
 
                 <div className="cart">
                     <h3>Electronics</h3>
-                    <a href="#"><img src="./images/asset 15.jpeg" alt="" /></a>
+                    <a href="/"><img src="./images/asset 15.jpeg" alt="" /></a>
                     <Link to='/productpage'>
-                        <a href="#" className='elporeBtnHover'>Explore now</a>
+                        <a href="/" className='elporeBtnHover'>Explore now</a>
                     </Link>
                 </div>
 
@@ -75,7 +75,7 @@ function Products() {
             <div className="productRow1">
                 <div className="cart">
                     <h3>Your fit in the front of your eye's</h3>\
-                    <a href="#"><img src="./images/asset 25.jpeg" alt="" /></a>
+                    <a href="/"><img src="./images/asset 25.jpeg" alt="" /></a>
                     <Link to='/productpage'>
                         <li href="#" className='elporeBtnHover'>Explore now</li>
                     </Link>
@@ -84,7 +84,7 @@ function Products() {
 
                 <div className="cart">
                     <h3>Quality like aeroplane on the sky</h3>
-                    <a href="#"><img src="./images/asset 26.jpeg" alt="" /></a>
+                    <a href="/"><img src="./images/asset 26.jpeg" alt="" /></a>
                     <Link to='/productpage'>
                         <li href="#" className='elporeBtnHover'>Explore now</li>
                     </Link>
@@ -92,7 +92,7 @@ function Products() {
 
                 <div className="cart">
                     <h3>Frequently repurchased in Home</h3>
-                    <a href="#"><img src="./images/asset 27.jpeg" alt="" /></a>
+                    <a href="/"><img src="./images/asset 27.jpeg" alt="" /></a>
                     <Link to='/productpage'>
                         <li href="#" className='elporeBtnHover'>Explore now</li>
                     </Link>
@@ -100,7 +100,7 @@ function Products() {
 
                 <div className="cart">
                     <h3>Home Decor Unde $20</h3>
-                    <a href="#"><img src="./images/asset 28.jpeg" alt="" /></a>
+                    <a href="/"><img src="./images/asset 28.jpeg" alt="" /></a>
                     <Link to='/productpage'>
                         <li href="#" className='elporeBtnHover'>Explore now</li>
                     </Link>
@@ -123,22 +123,22 @@ function Products() {
                             itemClass="carousel-item-padding-40-px"
 
                         >
-                            <a href="#" className='product2ImageHover'><img src="./images/asset 41.jpeg" alt="Product image" /></a>
-                            <a href="#"><img src="./images/asset 42.jpeg" alt="Product image" /></a>
-                            <a href="#"><img src="./images/asset 43.jpeg" alt="Product image" /></a>
-                            <a href="#"><img src="./images/asset 44.jpeg" alt="Product image" /></a>
-                            <a href="#"><img src="./images/asset 45.jpeg" alt="Product image" /></a>
-                            <a href="#"><img src="./images/asset 46.jpeg" alt="Product image" /></a>
-                            <a href="#"><img src="./images/asset 47.jpeg" alt="Product image" /></a>
-                            <a href="#"><img src="./images/asset 48.jpeg" alt="Product image" /></a>
-                            <a href="#"><img src="./images/asset 49.jpeg" alt="Product image" /></a>
-                            <a href="#"><img src="./images/asset 50.jpeg" alt="Product image" /></a>
-                            <a href="#"><img src="./images/asset 51.jpeg" alt="Product image" /></a>
-                            <a href="#"><img src="./images/asset 52.jpeg" alt="Product image" /></a>
-                            <a href="#"><img src="./images/asset 53.jpeg" alt="Product image" /></a>
-                            <a href="#"><img src="./images/asset 54.jpeg" alt="Product image" /></a>
-                            <a href="#"><img src="./images/asset 55.jpeg" alt="Product image" /></a>
-                            <a href="#"><img src="./images/asset 56.jpeg" alt="Product image" /></a>
+                            <a href="/" className='product2ImageHover'><img src="./images/asset 41.jpeg" alt="Product image" /></a>
+                            <a href="/"><img src="./images/asset 42.jpeg" alt="Product image" /></a>
+                            <a href="/"><img src="./images/asset 43.jpeg" alt="Product image" /></a>
+                            <a href="/"><img src="./images/asset 44.jpeg" alt="Product image" /></a>
+                            <a href="/"><img src="./images/asset 45.jpeg" alt="Product image" /></a>
+                            <a href="/"><img src="./images/asset 46.jpeg" alt="Product image" /></a>
+                            <a href="/"><img src="./images/asset 47.jpeg" alt="Product image" /></a>
+                            <a href="/"><img src="./images/asset 48.jpeg" alt="Product image" /></a>
+                            <a href="/"><img src="./images/asset 49.jpeg" alt="Product image" /></a>
+                            <a href="/"><img src="./images/asset 50.jpeg" alt="Product image" /></a>
+                            <a href="/"><img src="./images/asset 51.jpeg" alt="Product image" /></a>
+                            <a href="/"><img src="./images/asset 52.jpeg" alt="Product image" /></a>
+                            <a href="/"><img src="./images/asset 53.jpeg" alt="Product image" /></a>
+                            <a href="/"><img src="./images/asset 54.jpeg" alt="Product image" /></a>
+                            <a href="/"><img src="./images/asset 55.jpeg" alt="Product image" /></a>
+                            <a href="/"><img src="./images/asset 56.jpeg" alt="Product image" /></a>
                         </Carousel>
                     </div>
                 </div>

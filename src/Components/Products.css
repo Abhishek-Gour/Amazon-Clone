@@ -63,3 +63,8 @@ shopping cart. */
   color: #5f9ab9;
 }
 
+@media screen and (width: 100%) {
+ .productRow1 {
+  margin-top: -600px;
+ }
+}

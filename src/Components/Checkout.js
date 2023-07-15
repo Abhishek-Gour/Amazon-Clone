@@ -5,11 +5,11 @@
  */
 import React, { useEffect } from 'react'
 import './Checkout.css'
-import Subtotal from '../Subtotal'
 import CheckoutProduct from './Pages/CheckoutProduct'
 import { useDispatch, useSelector } from 'react-redux'
 import { calculateTotal, removeAllItems } from '../Store/CartSlice'
 import ProcessToPayment from './ProcessToPayment'
+import { Link } from 'react-router-dom'
 const Checkout = () => {
   const cart = useSelector((state) => state.cart);
   const dispath = useDispatch();
@@ -52,8 +52,11 @@ const Checkout = () => {
                     <span>({cartItems.length} Items:)</span>
                     <h3>$ {totalPrice}</h3>
                   </div>
+
                   <button className='btnChekout
-                    proceed-to-payment-left'>Proceed to Payment</button>
+                    proceed-to-payment-left'>
+                    Proceed to Payment
+                  </button>
                 </div>
               </>
             )
